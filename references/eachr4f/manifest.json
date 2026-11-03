@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/Eachr4f/atelier2-mnist",
+  "commit": "47654402f475fbe0e1d608b8e8417f28bb080d27",
+  "original_files_sha256": {
+    "MNIST_CNN_Result.ipynb": "fc07927733e09dc2aa87e0d28727241dc8183100ddc46fb32856f7b30b338e93",
+    "Faster_RCNN_MNIST.ipynb": "6979a16dc98bbee5d52a78fd3ef7bc4ae4c89aefaa6d73054925c8085f70215d",
+    "VGG16_FineTuning_MNIST.ipynb": "5e86eeea571099dd46374be9b4c3eea62325db09d403fc65b5a624d255db8758",
+    "AlexNet_FineTuning_MNIST.ipynb": "76fc70570bed6bba565bfcd85754d2f34b5c9675ef5841f473b403630fe3328e",
+    "ViT_MNIST.ipynb": "0a6e0732b65c1e4e8b4e0994889a8db4b3a586dfc746dd493162577d5e4f6552"
+  },
+  "original_notebooks_preserved_without_modification": true,
+  "adaptation_author": "KARMAS Hammam",
+  "adapted_notebooks_gpu_executed": false
+}

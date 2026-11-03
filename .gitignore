@@ -7,3 +7,4 @@ checkpoints/
 *.pt
 *.zip
 .DS_Store
+.runs/

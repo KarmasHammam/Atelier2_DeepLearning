@@ -6,3 +6,4 @@ pandas>=2.2,<3
 scikit-learn>=1.5,<2
 matplotlib>=3.8,<4
 nbformat>=5.10,<6
+tqdm>=4.66,<5
