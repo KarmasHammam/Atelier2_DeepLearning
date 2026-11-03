@@ -1,0 +1,27 @@
+{
+  "train_file_images": 60000,
+  "test_file_images": 10000,
+  "image_shape": [
+    1,
+    28,
+    28
+  ],
+  "raw_pixel_range": [
+    0,
+    255
+  ],
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000,
+    "probe": 1000
+  },
+  "split_hashes": {
+    "train": "cfb267f780503e97b36c1d705f6500861018df592d7246ec7a7b2008116dc765",
+    "validation": "0dd284b31e5cc35763c4bfb8bb04316eef7d7691248cbb4b448b012af65903c8",
+    "test": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+    "probe": "0f7d8cff53652bd3dafbb3035036f65c9b81b7eb65fcd0abfad4ff30373c91c5"
+  },
+  "empty_images_train": 0,
+  "note": "Pas de normalisation apprise sur le test. Constantes MNIST et ImageNet fixées dans src/data.py."
+}

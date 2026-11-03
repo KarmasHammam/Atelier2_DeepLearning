@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.2+cpu",
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "validated_profile": "smoke",
+  "full_gpu_execution": "not performed: no GPU available"
+}

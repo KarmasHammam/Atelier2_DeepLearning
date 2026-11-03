@@ -1,0 +1,111 @@
+{
+  "status": "completed",
+  "profile": "smoke",
+  "model": "vgg16",
+  "purpose": "CPU functional smoke check, NOT final GPU evidence",
+  "config": {
+    "model": "vgg16",
+    "profile": "smoke",
+    "seed": 42,
+    "epochs": 1,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "train_size": 64,
+    "valid_size": 40,
+    "test_size": 80,
+    "probe_size": 40,
+    "augmentation": false,
+    "pretrained": true
+  },
+  "config_digest": "d327cb1a0e38cdfe770a0c957adcd6d85e9080e03751b006207b6430887e5501",
+  "code_digest": "7a9656291f5006ffd6d2c0f55649106e6c36871b516632092f7a5c630e50fe7a",
+  "device_type": "cpu",
+  "device_name": "CPU",
+  "cuda_runtime": null,
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.2+cpu",
+  "parameters": 134301514,
+  "trainable_parameters": 7120394,
+  "selected_epoch": 1,
+  "training_seconds": 14.000006691999943,
+  "validation_seconds": 6.41205621600011,
+  "test": {
+    "loss": 2.1607247233390807,
+    "accuracy": 0.2625,
+    "f1_macro": 0.21585442397848692,
+    "f1_weighted": 0.21976067397848692,
+    "precision_macro": 0.2818581780538302,
+    "recall_macro": 0.25555555555555554,
+    "balanced_accuracy": 0.25555555555555554,
+    "no_detection_rate": 0.0,
+    "mean_iou": null,
+    "label_and_iou50_accuracy": null,
+    "evaluated_images": 80,
+    "evaluation_seconds": 12.38985927800013
+  },
+  "validation": {
+    "loss": 2.1802300214767456,
+    "accuracy": 0.25,
+    "f1_macro": 0.185,
+    "f1_weighted": 0.185,
+    "precision_macro": 0.22803030303030303,
+    "recall_macro": 0.25,
+    "balanced_accuracy": 0.25,
+    "no_detection_rate": 0.0,
+    "mean_iou": null,
+    "label_and_iou50_accuracy": null,
+    "evaluated_images": 40,
+    "evaluation_seconds": 6.263219979000041
+  },
+  "train_probe": {
+    "loss": 2.028948950767517,
+    "accuracy": 0.55,
+    "f1_macro": 0.5027777777777777,
+    "f1_weighted": 0.5027777777777777,
+    "precision_macro": 0.5583333333333333,
+    "recall_macro": 0.55,
+    "balanced_accuracy": 0.55,
+    "no_detection_rate": 0.0,
+    "mean_iou": null,
+    "label_and_iou50_accuracy": null,
+    "evaluated_images": 40,
+    "evaluation_seconds": 6.0118398069998875
+  },
+  "data": {
+    "split_hashes": {
+      "train": "b9ece9279d89939bbcb4b298bfeb9751648b782dbac2be187c6804c5df152a3e",
+      "validation": "25be3231caf94c031daa7b24a953ff382efb8089f97bbd206f5bbdb37848209f",
+      "test": "979600bc39fa64eabf4b086ebd71e5af5a29b6169636a1428c9f4d5d7a867830",
+      "probe": "0ffddc9fc6a56e59979328bdf32ac1ced49ccdc4862d5e114767f48fd3743eb3"
+    },
+    "sizes": {
+      "train": 64,
+      "validation": 40,
+      "test": 80,
+      "probe": 40
+    },
+    "source": "MNIST standard IDX, miroir fgnt/mnist ; MD5 torchvision conservés",
+    "resources_md5": {
+      "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+      "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432",
+      "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+      "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c"
+    },
+    "train_class_counts": [
+      6,
+      7,
+      7,
+      7,
+      6,
+      6,
+      6,
+      7,
+      6,
+      6
+    ]
+  },
+  "pretrained_weights": "IMAGENET1K_V1",
+  "timing_scope": "Synchronized training loops incl. loading/transforms; excludes downloads, model creation, validation/probe/test and checkpoint writing."
+}

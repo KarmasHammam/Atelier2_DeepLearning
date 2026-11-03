@@ -1,0 +1,12 @@
+test_cnn_and_vit_backpropagation (test_workflow.WorkflowTests.test_cnn_and_vit_backpropagation) ... ok
+test_comparison_refuses_mixed_profiles_and_partitions (test_workflow.WorkflowTests.test_comparison_refuses_mixed_profiles_and_partitions) ... ok
+test_detection_empty_and_highest_confidence (test_workflow.WorkflowTests.test_detection_empty_and_highest_confidence) ... ok
+test_detection_target_and_label_offset (test_workflow.WorkflowTests.test_detection_target_and_label_offset) ... ok
+test_diagnostic_loss_preserves_batchnorm_and_random_state (test_workflow.WorkflowTests.test_diagnostic_loss_preserves_batchnorm_and_random_state) ... ok
+test_full_profile_refuses_cpu_before_training (test_workflow.WorkflowTests.test_full_profile_refuses_cpu_before_training) ... ok
+test_same_split_across_all_architectures (test_workflow.WorkflowTests.test_same_split_across_all_architectures) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.262s
+
+OK
