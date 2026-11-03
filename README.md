@@ -1,16 +1,6 @@
 # Atelier 2 — MNIST : CNN, Faster R-CNN, transfert et ViT
 
-**Adaptation et présentation : KARMAS Hammam**
-**Base importée : [Eachr4f/atelier2-mnist](https://github.com/Eachr4f/atelier2-mnist)**,
-commit `47654402f475fbe0e1d608b8e8417f28bb080d27`.
-
-L'objectif est de reconnaître les chiffres manuscrits de **0 à 9** avec cinq modèles
-PyTorch, puis d'analyser leur accuracy, leur F1, leur loss et leur temps de calcul.
-
-Le dépôt contient désormais les **cinq notebooks source avec leurs résultats GPU
-conservés**, ainsi que **cinq versions adaptées et corrigées pour Colab**.
-Les résultats de la source restent attribués à Eachr4f. Ils ne sont pas présentés
-comme une nouvelle exécution de KARMAS Hammam ni comme une validation du code corrigé.
+**Présentation : KARMAS Hammam**
 
 ## 1. Par où commencer ?
 
