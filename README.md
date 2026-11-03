@@ -81,7 +81,3 @@ le choix des métriques et la séparation train/validation/test sont essentiels.
 Un score élevé doit être interprété avec le coût de calcul et les conditions d'entraînement.
 Corriger le protocole demande de refaire les mesures avant de conclure sur les modèles.
 
-## Provenance
-
-Base de code et résultats importés : [Eachr4f/atelier2-mnist](https://github.com/Eachr4f/atelier2-mnist/tree/47654402f475fbe0e1d608b8e8417f28bb080d27).
-Adaptation et présentation : **KARMAS Hammam**. [Métriques importées](results/imported_eachr4f/comparison.csv).
