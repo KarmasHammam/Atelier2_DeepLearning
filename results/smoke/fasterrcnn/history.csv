@@ -1,2 +1,0 @@
-epoch,train_loss,train_accuracy_probe,validation_loss,validation_accuracy,validation_f1_macro,training_seconds
-1,0.4644097578711808,0.3,0.31035871133208276,0.275,0.19128941234204394,26.009766158000048
