@@ -1,6 +1,0 @@
-model,accuracy,f1_macro,test_loss_reported,training_time_reported,epochs_reported,gpu_count_reported,gpu_type_reported,source_notebook,origin,source_commit
-cnn,0.9956,0.9956,0.0125,339.7 seconds,28,1,Tesla T4,MNIST_CNN_Result.ipynb,imported_recorded_outputs_NOT_new_execution,47654402f475fbe0e1d608b8e8417f28bb080d27
-fasterrcnn,0.9922,0.9921,,79.9 minutes,8,2,Tesla T4,Faster_RCNN_MNIST.ipynb,imported_recorded_outputs_NOT_new_execution,47654402f475fbe0e1d608b8e8417f28bb080d27
-vgg16,0.9949,0.9949,0.0226,6.0 minutes,9,2,Tesla T4,VGG16_FineTuning_MNIST.ipynb,imported_recorded_outputs_NOT_new_execution,47654402f475fbe0e1d608b8e8417f28bb080d27
-alexnet,0.9925,0.9924,0.0236,3.8 minutes,10,2,Tesla T4,AlexNet_FineTuning_MNIST.ipynb,imported_recorded_outputs_NOT_new_execution,47654402f475fbe0e1d608b8e8417f28bb080d27
-vit,0.8792,0.8772,0.3746,62.6 seconds,5,2,Tesla T4,ViT_MNIST.ipynb,imported_recorded_outputs_NOT_new_execution,47654402f475fbe0e1d608b8e8417f28bb080d27

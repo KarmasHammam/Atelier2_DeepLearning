@@ -69,7 +69,7 @@ source .venv/bin/activate
 python -m unittest discover -s tests -v
 ```
 
-**Six tests locaux réussissent** : code des notebooks et scripts DDP, gradients CNN/ViT,
+**Cinq tests locaux réussissent** : code des notebooks et scripts DDP, gradients CNN/ViT,
 calcul de loss ViT, export et traçabilité. Les entraînements corrigés et les chemins
 CUDA/DDP restent à valider sur GPU ; aucun nouveau score GPU n'est revendiqué ici.
 

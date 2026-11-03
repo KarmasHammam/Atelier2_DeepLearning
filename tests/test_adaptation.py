@@ -21,16 +21,6 @@ from scripts import export_adapted_results as exporter
 
 
 class AdaptationTests(unittest.TestCase):
-    def test_imported_metrics_keep_their_origin(self):
-        import csv
-        path = ROOT / 'results/imported_eachr4f/comparison.csv'
-        with path.open() as stream:
-            rows = list(csv.DictReader(stream))
-        self.assertEqual(len(rows), 5)
-        self.assertTrue(all(row['origin'] == 'imported_recorded_outputs_NOT_new_execution' for row in rows))
-        self.assertTrue(all(row['source_commit'] for row in rows))
-        self.assertAlmostEqual(float(next(row for row in rows if row['model'] == 'vit')['f1_macro']), .8772)
-
     def test_corrected_notebooks_have_no_stale_outputs_and_compile(self):
         files = list((ROOT / 'notebooks/colab').glob('*.ipynb'))
         self.assertEqual(len(files), 5)
