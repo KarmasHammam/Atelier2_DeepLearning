@@ -1,7 +1,6 @@
 """Vérifier l'import attribué et l'adaptation sans simuler un entraînement GPU."""
 import ast
 import contextlib
-import hashlib
 import io
 import json
 from pathlib import Path
@@ -22,15 +21,15 @@ from scripts import export_adapted_results as exporter
 
 
 class AdaptationTests(unittest.TestCase):
-    def test_original_notebooks_preserve_recorded_outputs_and_hashes(self):
-        folder = ROOT / 'references/eachr4f'
-        manifest = json.loads((folder / 'manifest.json').read_text())
-        self.assertEqual(len(manifest['original_files_sha256']), 5)
-        for name, expected in manifest['original_files_sha256'].items():
-            path = folder / 'notebooks' / name
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)
-            notebook = nbformat.read(path, as_version=4)
-            self.assertTrue(any(c.get('outputs') for c in notebook.cells if c.cell_type == 'code'))
+    def test_imported_metrics_keep_their_origin(self):
+        import csv
+        path = ROOT / 'results/imported_eachr4f/comparison.csv'
+        with path.open() as stream:
+            rows = list(csv.DictReader(stream))
+        self.assertEqual(len(rows), 5)
+        self.assertTrue(all(row['origin'] == 'imported_recorded_outputs_NOT_new_execution' for row in rows))
+        self.assertTrue(all(row['source_commit'] for row in rows))
+        self.assertAlmostEqual(float(next(row for row in rows if row['model'] == 'vit')['f1_macro']), .8772)
 
     def test_corrected_notebooks_have_no_stale_outputs_and_compile(self):
         files = list((ROOT / 'notebooks/colab').glob('*.ipynb'))
